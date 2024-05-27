@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Gitlab button - Copy Full Commit",
+    "version": "1.0",
+    "description": "Adds a button to copy commit information to the clipboard",
+    "icons": {
+        "48": "icon48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
