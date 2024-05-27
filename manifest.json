@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Gitlab button - Copy Full Commit",
-    "version": "0.0.0.1",
+    "name": "GitLab Commit Grabber (Copy button for full commit info)",
+    "version": "0.0.0.3",
     "description": "Adds a button to copy commit information to the clipboard",
     "icons": {
         "48": "icon48.png"
