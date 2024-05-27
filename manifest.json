@@ -1,19 +1,17 @@
 {
     "manifest_version": 3,
     "name": "GitLab Commit Grabber (Copy button for full commit info)",
-    "version": "0.0.0.3",
+    "version": "1.0.0.7",
     "description": "Adds a button to copy commit information to the clipboard",
     "icons": {
-        "48": "icon48.png"
+      "48": "icon48.png"
     },
+    "permissions": ["clipboardWrite", "storage"],
+    "options_page": "settings.html",
     "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "content.js"
-            ]
-        }
+      {
+        "matches": ["https://gitlab.com/*"],
+        "js": ["content.js"]
+      }
     ]
-}
+  }
